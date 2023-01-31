@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    min-height: 100vh;
+}
+
+body{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.705),70%,#dd5b4452), no-repeat url("./background.webp");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+h1,h2,h3,p{
+    color: #FFF;
+}
+
+.header{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.header button{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.623),70%,#dd5b4452), no-repeat center url("./mileniumitem.png");
+    background-size: cover;
+    color: #FFF;
+    font-size: 1.5rem;
+    width: 10rem;
+    height: 10rem;
+    padding-top: 6rem;
+    margin-top: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header button:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+    transition: 0.5s;
+}
+
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width:769px){
+    body{
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.623),70%,#dd5b4452), no-repeat center url("./mobilebackground.webp");
+        background-size: cover;
+    }
+    .container{
+        margin-top: 1rem;
+        gap: 5rem;
+        flex-direction: column;
+    }
+}
